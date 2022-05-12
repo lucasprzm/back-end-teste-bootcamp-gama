@@ -1,8 +1,7 @@
 var express = require("express");
 const usuariosController = require("../controllers/usuariosController");
-const validarCriacaoUsuario = require("../validations/usuarios/create");
-const { body } = require("express-validator");
 const authController = require("../controllers/authController");
+const validarCriacaoUsuario = require("../validations/usuarios/create");
 var router = express.Router();
 
 // Registro de novo usuário
