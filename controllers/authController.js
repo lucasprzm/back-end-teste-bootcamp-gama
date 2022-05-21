@@ -25,7 +25,8 @@ const authController = {
         email: usuario.email,
         nome: usuario.nome,
       },
-      secret.key
+      secret.key,
+      { expiresIn: "24h" }
     );
 
     return res.json(token);
